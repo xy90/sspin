@@ -1,0 +1,40 @@
+/* pages/orders/orders.wxss */
+.swiper-tab {
+  background-color: #fff;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+.swiper-tab-item {
+  width: 20%;
+  font-size: 32rpx;
+  color: #434343;
+}
+
+.active {
+  color: #f65959;
+  border-bottom: 4rpx solid #f65959;
+}
+
+swiper {
+  background-color: #fff;
+  height: 1000rpx;
+}
+
+/* 订单列表 */
+.itemlist {overflow: hidden; padding-top: 20rpx; background-color: #fff;}
+.itemlist .item-head {border-bottom: solid 1px #eee; height : 50rpx; color : gray;}
+.itemlist .item-head .id {font-size: 32rpx; overflow: hidden; left: 20rpx; position: absolute; display:inline-block;}
+.itemlist .item-head .status {display:inline-block; font-size: 32rpx; overflow: hidden; right: 20rpx;  position: absolute; color: red;}
+.itemlist .item { border-bottom: solid 1px #eee; height : 160rpx; padding: 20rpx 20rpx 20rpx 160rpx; position: relative;}
+.itemlist .item image { width : 150rpx; height : 150rpx; position: absolute; left : 10rpx; top : 50%; margin-top: -65rpx; }
+.itemlist .item .title { font-size: 32rpx; overflow: hidden; padding-left: 60rpx; width: 400rpx; display:inline-block;}
+.itemlist .item .price {font-size : 32rpx; color:gray; display: inline-block; position: absolute; top:20rpx; right: 30rpx;}
+.itemlist .item .cnt {font-size : 32rpx; position: absolute; top:60rpx; right: 30rpx; color:gray;}
+.itemlist .item .amt { font-size : 32rpx; color : red; position: absolute; bottom : 20rpx; right: 30rpx}
+.itemlist .item .soldCnt {font-size : 26rpx; color : #B8B8B8; position: absolute; right : 20rpx; bottom : 20rpx;}
+.itemlist .item .icon.plus { position: absolute; right : 20rpx; bottom : 10rpx; }

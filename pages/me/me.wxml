@@ -1,0 +1,18 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+  <view class="head">
+    <image class="photo" src="http://wx.qlogo.cn/mmopen/GoBeTIlzV1sEc11NcS26NEHGrTu2pNEiaw7luvZHR0BB20doeK5Lc4039ATJiboH0bkZeVImWok3hcB826S4mlSKQW0VK97qL1/0"></image>
+    <view class="userinfo">
+      <view class="nick">
+        李骏
+      </view>
+      <view class="phone">134****3759</view>
+    </view>
+  </view>
+
+  <view class="entries">
+    <view class="entry" bindtap="meCallPhone" data-phone="0851-85288444">
+      <image src="/icons/icon_tab_contact.png" class="icon" /> 客服电话 0851-85288444
+    </view>
+  </view>
+</view>

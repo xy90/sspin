@@ -1,0 +1,12 @@
+.head { padding : 30rpx 20rpx 0 20rpx; display: flex; height : 200rpx; background-color: #fff; background-size : 100%; }
+.head .photo { width : 120rpx; height : 120rpx; border-radius : 50%;}
+.head .userinfo .nick { padding : 0 20rpx; margin-top : 25rpx; font-size : 32rpx; }
+.head .userinfo .phone { margin-top: 10rpx; font-size : 28rpx; padding: 0 20rpx; }
+
+.sub-info { display: flex; padding : 20rpx 0; border-bottom : solid 1px #f0f0f0; overflow: hidden; background-color: #fff; }
+.sub-info .mod { flex-grow : 1; border-right : solid 1px #f0f0f0; text-align: center; position: relative; right : -1px; font-size : 24rpx; color : gray; }
+.sub-info .mod view { font-size : 32rpx; color : #404040; margin-bottom : 0rpx; }
+
+.entries { margin-top : 20rpx; background-color: #fff; border-bottom : solid 1px #eee; }
+.entries .entry { border-top: solid 1px #eee; font-size : 28rpx; color : gray; height : 60rpx; line-height: 60rpx; padding : 10rpx 20rpx; }
+.entries .entry .icon {margin-top : 10rpx; float: left; margin-right : 20rpx; width: 24px; height: 24px;}

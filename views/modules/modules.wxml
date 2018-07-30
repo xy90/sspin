@@ -1,0 +1,15 @@
+<!--views/modules/modules.wxml-->
+
+<!-- 页脚模块 -->
+<template name="footer">
+  <view>
+    <text class="footer">已经到底了</text>
+  </view>
+</template>
+
+<!-- 返回顶部按钮 -->
+<template name="gotop">
+  <view class="gotop" wx:if="{{showGoTop}}" bindtap='goTop'>
+    <image class="gotopimg" src='/icons/gotop.png' mode='widthFix'></image>
+  </view>
+</template>

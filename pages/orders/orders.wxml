@@ -1,0 +1,31 @@
+<!--pages/orders/orders.wxml-->
+<view class="container">
+  <view class="swiper-tab" scroll-x="true" scroll-left="0" scroll-with-animation="true">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">全部</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">待分享</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">拼单成功</view>
+    <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">拼单失败</view>
+  </view>
+
+  <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+    <swiper-item>
+      <view class="itemlist" wx:if="{{orderList}}">
+        <view wx:for="{{orderList}}">
+          <view class="item-head">
+            <view class="id">{{item.orderTime}}</view>
+            <view class="status">{{item.orderDesc}}</view>
+          </view>
+          <view class="item">
+            <navigator url="../details/details?orderId={{item.orderId}}">
+              <image src="{{item.prodImg}}"></image>
+              <view class="title">{{item.actvName}}</view>
+              <view class="price">¥{{item.actvPrice}}</view>
+              <view class="cnt">x{{item.buyCnt}}</view>
+              <view class="amt">实付: ¥{{item.realPay}}</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

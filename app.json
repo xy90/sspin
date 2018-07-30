@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/actv/actv",
+    "pages/me/me",
+    "pages/orders/orders"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "闪闪拼",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/icons/icon_tab_home.png",
+        "selectedIconPath": "/icons/icon_tab_home_hl.png"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "我的拼单",
+        "iconPath": "/icons/icon_tab_order.png",
+        "selectedIconPath": "/icons/icon_tab_order_hl.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "/icons/icon_tab_me.png",
+        "selectedIconPath": "/icons/icon_tab_me_hl.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+/**index.wxss**/
+@import "../../views/modules/modules.wxss";
+
+/* 轮播图 */
+.slider { height : 300rpx; position: relative; background-color: #efefef; }
+.slider swiper { height : 100%; }
+.slider swiper navigator,
+.slider swiper image { width : 100%; height : 100%; }
+.slider .pagination { position: absolute; bottom : 10rpx; width : 100%; height : 20rpx; display: flex; align-content : center; justify-content:center; }
+.slider .pagination view { width: 14rpx; height : 14rpx; border-radius: 7rpx; background-color: #ccc; margin : 0 10rpx; }
+.slider .pagination view.current { background-color: #f5692e; }
+
+/* 活动列表 */
+.itemlist { overflow: hidden; padding-top: 20rpx; background-color: #fff;}
+.itemlist .item {border-bottom: solid 1px #eee; height : 160rpx; padding: 20rpx 20rpx 20rpx 160rpx; position: relative; }
+.itemlist .item image { width : 150rpx; height : 150rpx; position: absolute; left : 10rpx; top : 50%; margin-top: -65rpx; }
+.itemlist .item .title { font-size: 32rpx; overflow: hidden; padding-left: 60rpx;}
+.itemlist .item .price { font-size : 36rpx; color : #f5692e; position: absolute; bottom : 20rpx; padding-left: 60rpx}
+.itemlist .item .price .origPrice { font-size : 30rpx; color : #B8B8B8;text-decoration:line-through; display: inline-block; padding-left: 10rpx}
+.itemlist .item .soldCnt {font-size : 26rpx; color : #B8B8B8; position: absolute; right : 20rpx; bottom : 20rpx;}
+.itemlist .item .icon.plus { position: absolute; right : 20rpx; bottom : 10rpx; }
